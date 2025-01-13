@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Tushar Gauba</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #2a2a2a, #1e1e1e);
+      color: white;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .section {
+      margin-bottom: 48px;
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #76b900;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+      color: #76b900;
+    }
+    p, span {
+      margin: 0;
+    }
+    .rounded {
+      border-radius: 8px;
+    }
+    .shadow {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    .text-green {
+      color: #76b900;
+    }
+    .text-gray {
+      color: #aaa;
+    }
+    .text-white {
+      color: white;
+    }
+
+    /* Header Styles */
+    .header {
+      background: linear-gradient(to right, #00c853, #00e676);
+      padding: 24px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .header img {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+    .header .details {
+      max-width: 60%;
+    }
+    .header .details h1 {
+      font-size: 32px;
+    }
+    .header .details p {
+      margin: 16px 0;
+      color: #d1d1d1;
+    }
+    .header button {
+      background: white;
+      color: #00c853;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .header button:hover {
+      background: #f5f5f5;
+    }
+
+    /* Section Styles */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #2e2e2e;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #00c8534d;
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+    .card h3 {
+      font-size: 20px;
+      color: #76b900;
+    }
+    .card p {
+      color: #d1d1d1;
+    }
+
+    /* Experience Styles */
+    .experience {
+      border: 1px solid #00c8534d;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      background: #2e2e2e;
+    }
+    .experience h3 {
+      color: #76b900;
+    }
+    .experience ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    .experience ul li {
+      margin: 8px 0;
+      color: #d1d1d1;
+    }
+
+    /* Achievements Section */
+    .achievements-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+    }
+    .achievement-card {
+      background: #2e2e2e;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #00c8534d;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    .achievement-card h3 {
+      color: #76b900;
+    }
+    .achievement-card p {
+      color: #d1d1d1;
+    }
+
+    /* Skills Section */
+    .skills-container {
+      display: flex;
+      gap: 16px;
+    }
+    .skill-box {
+      flex: 1;
+      background: linear-gradient(to bottom right, #00c853, #00e676);
+      padding: 16px;
+      border-radius: 12px;
+      color: white;
+    }
+    .skill-box h3 {
+      font-size: 20px;
+    }
+
+    /* NVIDIA Branding */
+    .nvidia-logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: #76b900;
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- NVIDIA Branding -->
+    <div class="nvidia-logo">
+      <img src="file:///C:/Users/Tushar/OneDrive/Desktop/Creative%20Resume/NVIDIA%20Logo.png" alt="NVIDIA Logo" style="width: 40px; height: 40px; margin-right: 12px;">
+      <span>NVIDIA</span>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header shadow">
+      <img src="file:///C:/Users/Tushar/OneDrive/Desktop/Creative%20Resume/image.png" alt="Your Photo" style="width: 128px; height: 128px; border-radius: 50%; border: 4px solid white;"> <!-- Replace with correct relative path -->
+      <div class="details">
+        <h1>Hi, I am Tushar Gauba</h1>
+        <p>A perfect blend of technical expertise and product management acumen - driven by innovation and problem-solving excellence.</p>
+        <p class="text-green">tushar.gauba_pgp2025_25095@mastersunion.org | +91 9717418636</p>
+      </div>
+      <button>Your Next Hire</button>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section">
+      <h2 class="text-green"><i class="fas fa-graduation-cap"></i> Education & Credentials</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Masters' Union</h3>
+          <p>PGP TBM</p>
+          <p class="text-green">2024-25</p>
+        </div>
+        <div class="card">
+          <h3>MAIT, IP University</h3>
+          <p>B.Tech ECE</p>
+          <p class="text-green">8.3 CGPA</p>
+        </div>
+        <div class="card">
+          <h3>Top Performer</h3>
+          <p>Ranked in Top 13</p>
+          <p class="text-green">23/130</p>
+        </div>
+        <div class="card">
+          <h3>Published</h3>
+          <p>IOP Journal</p>
+          <p class="text-green">4 Citations</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section">
+      <h2 class="text-green"><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="experience">
+        <h3>STATIQ</h3>
+        <p>Associate Product Manager (Jan'23 - May'24)</p>
+        <ul>
+          <li>Led 50+ feature implementations, boosting user satisfaction by 25%.</li>
+          <li>Resolved 200+ bugs, cutting resolution time by 30%.</li>
+          <li>Managed a team of 7, increasing development speed by 20%.</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>AUTHBRIDGE</h3>
+        <p>Sr Associate - Process Excellence (Feb'22 - Jan'23)</p>
+        <ul>
+          <li>Saved ₹24 lakhs & improved efficiency by 30% via automation.</li>
+          <li>Reduced manual work by 45% through Rule Engine & SOPs.</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>GREYORANGE</h3>
+        <p>Graduate Engineer Trainee (Nov'20 - Jan'22)</p>
+        <ul>
+          <li>Managed a site with 50 robots & 7 chargers, achieving 100% stability.</li>
+          <li>Youngest employee sent on-site to South Korea, leading a team of 5.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="section">
+      <h2 class="text-green"><i class="fas fa-trophy"></i> Achievements</h2>
+      <div class="achievements-container">
+        <div class="achievement-card">
+          <h3>3rd Place</h3>
+          <p>GenAI Hackathon</p>
+          <p>Microsoft</p>
+        </div>
+        <div class="achievement-card">
+          <h3>Rising Star Award</h3>
+          <p>Awarded to top 5% Employees for exceptional work in short span of time</p>
+        </div>
+        <div class="achievement-card">
+          <h3>Youngest employee to go offsite</h3>
+          <p>50 robots, 7 chargers, 100% site stabilization in South Korea</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+      <h2 class="text-green"><i class="fas fa-cogs"></i> Skills & Tools</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <h3>Core Skills</h3>
+          <p>Leadership | Strategy | Critical Thinking | Problem-Solving | Prioritization | Adaptability | Creativity</p>
+        </div>
+        <div class="skill-box">
+          <h3>Tools</h3>
+          <p>Jira | Power BI | SQL | Python | Azure | Whimsical | Microsoft Excel | Confluence | LLM's</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
